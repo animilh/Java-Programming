@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;alphabetUp&apos; in &apos;hack_bulgaria.CeaserCipher.encrypth(...)&apos; to &apos;alphabet&apos;&#x0D;&#x0A;- Original project: &apos;java_course&apos;&#x0D;&#x0A;- Original element: &apos;hack_bulgaria.CeaserCipher.encrypth(String, int).alphabetUp&apos;&#x0D;&#x0A;- Renamed element: &apos;alphabetUp&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;alphabetUp&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;hack_bulgaria{CeaserCipher.java[CeaserCipher~encrypth~QString;~I@alphabetUp!313!385!337!346!QMap\&lt;QCharacter;QInteger;&gt;;!0!false" name="alphabet" references="true" stamp="1423501578987" version="1.0"/>
+</session>

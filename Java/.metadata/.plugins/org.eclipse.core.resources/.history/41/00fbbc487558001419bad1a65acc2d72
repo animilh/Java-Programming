@@ -1,0 +1,11 @@
+package lesson5_String;
+
+public class PersonTest {
+	public static void main(String[] args) {
+		Person ivan=new Person();
+		Person maria=new Person();
+		System.out.println(ivan);
+		System.out.println(maria);
+	}
+
+}

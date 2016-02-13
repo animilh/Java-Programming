@@ -1,0 +1,13 @@
+package lesson5_String;
+
+public class PersonTest {  // wsqka duma w imeto na clasa zapochwat s glawna bukva
+	
+	public static void main(String[] args) {
+		
+		Person ivan=new Person();
+		Person maria=new Person();
+		System.out.println(ivan);
+		System.out.println(maria);
+		System.out.println(ivan==maria);
+		
+	}}

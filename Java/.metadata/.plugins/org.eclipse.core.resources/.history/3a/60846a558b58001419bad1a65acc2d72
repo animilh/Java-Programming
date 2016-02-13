@@ -1,0 +1,34 @@
+package lesson5_String;
+
+public class Car {
+  String model;
+  int maxSpeed;
+  int currentSpeed;
+  String color;
+  int currentGear;
+//  Person owner=new Person();
+  Person owner;
+  
+  void accelerate(){
+	  System.out.println("Accelerating ...");
+  }
+  void changeGearUp(){
+	  if ((currentGear>=1)&&(currentGear<5)){
+	  currentGear++;
+	  }
+  }
+  void chandeGearDown(){
+	  if ((currentGear>1)&&(currentGear<=5)){
+	  currentGear--;
+	  }
+  }
+  void changeGear(int nextGear){
+	  currentGear=nextGear;
+  } 
+  void changeColor(String newColor){
+	  color=newColor;
+  }
+  
+  
+  
+}

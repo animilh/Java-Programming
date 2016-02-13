@@ -1,0 +1,29 @@
+package lesson5_String;
+
+public class CarTest {
+	public static void main(String[] args) {
+		
+	Car peugeot=new Car();
+	Car lada=new Car();
+     
+	peugeot.color="Grey";
+	peugeot.currentGear=4;
+	peugeot.currentSpeed=60;
+	peugeot.maxSpeed=150;
+	peugeot.model="306";
+	
+	lada.color="Red";
+	lada.currentGear=5;
+	lada.currentSpeed=90;
+	lada.maxSpeed=120;
+	lada.model="Niva";
+	
+	lada.currentSpeed=60;
+	lada.currentGear=4;
+	lada.owner.name="Ivajlo";
+	lada.owner.age=38;
+	
+	System.out.println("My car is "+lada.color+" color. I am driving with "+lada.currentSpeed+" km. per hour on "+lada.currentGear+" gear.");
+	System.out.println("The owner of lada Niva is "+lada.owner.name+". He is "+lada.owner.age+" years old.");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;java_course/src/hw11&apos;&#x0D;&#x0A;- Original project: &apos;java_course&apos;&#x0D;&#x0A;- Destination element: &apos;java_course/src/hw11&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     lesson11.SimpleNotepad.java&#x0D;&#x0A;     lesson11.SecuredNotepad.java&#x0D;&#x0A;     lesson11.INotepad.java&#x0D;&#x0A;     lesson11.NotepadDemo.java&#x0D;&#x0A;     lesson11.Page.java" description="Copy compilation units" destination="/src&lt;hw11" element1="/src&lt;lesson11{SimpleNotepad.java" element2="/src&lt;lesson11{SecuredNotepad.java" element3="/src&lt;lesson11{INotepad.java" element4="/src&lt;lesson11{NotepadDemo.java" element5="/src&lt;lesson11{Page.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1415787312706" units="5" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package lesson5_String;
+
+public class Car {
+  String model;
+  int maxSpeed;
+  int currentSpeed;
+  String color;
+  byte currentGear;
+}

@@ -1,0 +1,25 @@
+package lesson5_String;
+
+public class CarTest {
+	public static void main(String[] args) {
+		
+	Car peugeot=new Car();
+	Car lada=new Car();
+     
+	peugeot.color="Grey";
+	peugeot.currentGear=4;
+	peugeot.currentSpeed=60;
+	peugeot.maxSpeed=150;
+	peugeot.model="306";
+	
+	lada.color="Red";
+	lada.currentGear=5;
+	lada.currentSpeed=90;
+	lada.maxSpeed=120;
+	lada.model="Niva";
+	
+	lada.currentSpeed=60;
+	lada.currentGear=4;
+	
+	}
+}
