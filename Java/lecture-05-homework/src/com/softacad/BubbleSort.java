@@ -7,17 +7,19 @@ public class BubbleSort{
 	// sort array in descending order
 	
 	private static int[] bubbleSort(int[] array){
+		
+		int[] result = Arrays.copyOf(array, array.length);
 	
-	    for(int i=0; i<array.length; i++){
-		    for(int j=0; j<array.length-1-i; j++){
-			    if(array[j] < array[j+1]){
-				    int temp = array[j];
-					array[j] = array[j+1];
-					array[j+1] = temp;
+	    for(int i=0; i<result.length; i++){
+		    for(int j=0; j<result.length-1-i; j++){
+			    if(array[j] < result[j+1]){
+				    int temp = result[j];
+				    result[j] = result[j+1];
+				    result[j+1] = temp;
 				}
 			}
 		}
-	    return array;
+	    return result;
 	}
 	
 	public static void main(String[] args){
