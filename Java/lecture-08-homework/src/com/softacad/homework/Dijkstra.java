@@ -19,9 +19,6 @@ public class Dijkstra {
 		this.graph = graph;
 	}
 
-	/**
-	 * http://stackoverflow.com/questions/2266827/when-to-use-comparable-and-comparator
-	 */
 	public class NodeCompator implements Comparator<Node>  {
 		@Override
 		public int compare(Node n1, Node n2) {
@@ -33,21 +30,34 @@ public class Dijkstra {
 		}
 	};
 
-	public Set<Node> findShortest(String source) {
-		final Queue<Node> queue = new PriorityQueue<Node>(10, new NodeCompator());
-
+	public int findShortest(Node start, Node end) {		
+		if (start == null || end == null) {
+			throw new IllegalArgumentException("Enter valid city names !");
+		}
+		
+		if (!graph.hasNode(start) || !graph.hasNode(end)) {
+			throw new IllegalArgumentException(start + " or " + end + " points are not in the map");
+		}
+		
+		Queue<Node> queue = new PriorityQueue<Node>(graph.getNumVertices(), new NodeCompator());
+		
 		for (Entry<Node, ArrayList<Edge>> entry :  graph.getGraph().entrySet()) {
 			Node currNode = entry.getKey();
-			if (currNode.getValue() == source) {
+			if (currNode.equals(start)) {
 				currNode.setDistance(0);
 				queue.add(currNode);
 			} 
 		}
-
-		final Set<Node> doneSet = new HashSet<Node>();
+		// set of settled nodes
+		Set<Node> doneSet = new HashSet<Node>();
 
 		while (!queue.isEmpty()) {
 			Node src = queue.poll();
+			
+			if(src.equals(end)) {
+				return src.getDistance();
+			}
+			
 			if (!doneSet.contains(src)){
 				doneSet.add(src);
 
@@ -65,7 +75,7 @@ public class Dijkstra {
 			}
 		}
 
-		return doneSet;
+		throw new RuntimeException(end + " node is unreachable");
 	}
 	
 }	
